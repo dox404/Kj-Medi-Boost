@@ -6,7 +6,7 @@ The original landing page shortened several headings, paragraphs and lists. The 
 
 | PDF section | Website location | Verification |
 | --- | --- | --- |
-| 1. Hero | `#home` and trust strip | Exact headline, subheadline, two introduction paragraphs, both CTAs and five trust highlights |
+| 1. Hero | `#home`, trust strip and adjacent introduction | Exact headline, subheadline, two introduction paragraphs, both CTAs and five trust highlights |
 | 2. Who We Help | `#industries` | Exact heading, introduction, all 12 audiences and CTA |
 | 3. Our Services | `#services` | All 14 exact service names and descriptions; complete six-point AEO and GEO lists |
 | 4. SEO + AEO + GEO | `#visibility` | Exact heading, introduction, three definitions, objective and visibility qualification |
@@ -35,3 +35,7 @@ The original landing page shortened several headings, paragraphs and lists. The 
 As agreed, actual contact details, social profile URLs, founder/team/client photographs, office photographs, verified review text and approved testimonial videos will be added later. The PDF contains instructions or placeholders for these, not the assets themselves. No review, photograph, statistic or endorsement has been invented.
 
 Editorial instructions such as “Insert verified Google Business Profile review” are implemented as clearly labelled pending content. They are not presented as real reviews. Photo slots and review/video settings are ready in `script.js`. The form does not report delivery until a real destination is configured. The original PDF and the generated deployment ZIP remain local and are excluded from Git.
+
+## Layout organisation
+
+The footer now groups brand information, quick links and address into balanced columns. Its 14 service links remain available in an accessible, expandable directory. The founder's complete experience list is also expandable. Supporting hero copy sits in a separate introduction immediately after the trust strip, so the primary consultation action is visible earlier. The seven reasons use a compact grid, photo placeholders use less space, and the desktop consultation form pairs related fields. All 229 copy checks continue to pass after reorganisation.
