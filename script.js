@@ -21,7 +21,7 @@ const SITE = {
 const TEAM = [
   { name: 'Vishal', role: 'Marketing', photo: '' },
   { name: 'Kuldeep', role: 'SEO Lead', photo: 'assets/kuldeep.jpg' },
-  { name: 'Kishor Bhai', role: 'Performance Marketer', photo: 'assets/kishor.jpeg' },
+  { name: 'Kishor', role: 'Performance Marketer', photo: 'assets/kishor.jpeg' },
   { name: 'Deepanshi', role: 'SEO Executive', photo: '' },
   { name: 'Hema', role: 'Social Media', photo: 'assets/hema.jpg' },
   { name: 'Komal', role: 'Video Editor', photo: '' },
