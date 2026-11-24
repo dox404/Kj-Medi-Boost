@@ -7,7 +7,7 @@ const SITE = {
   phone: '',
   whatsapp: '', // International digits only, e.g. 919876543210.
   formEndpoint: '', // Optional HTTPS endpoint accepting JSON via POST.
-  founderPhoto: '', // e.g. assets/kunika.jpg (use the actual approved portrait).
+  founderPhoto: 'assets/founder.png',
   socials: { Instagram: '', Facebook: '', LinkedIn: '', YouTube: '' },
   reviews: {
     umesh: { text: '', url: '', photo: '' },
@@ -19,14 +19,14 @@ const SITE = {
 };
 
 const TEAM = [
-  { name: 'Janvi', role: 'Social Media Manager', description: 'Social media strategy, content planning and account management.', photo: '' },
-  { name: 'Yug', role: 'Video Editor', description: 'Reels, promotional videos, editing and visual storytelling.', photo: '' },
-  { name: 'Kishor', role: 'Performance Marketing Specialist', description: 'Paid campaigns, optimisation, audience targeting and performance tracking.', photo: '' },
-  { name: 'Deepanshi', role: 'SEO Specialist', description: 'SEO strategy, keyword research, organic visibility and content optimisation.', photo: '' },
-  { name: 'Vishal', role: 'Marketing', description: 'Marketing coordination and campaign execution support.', photo: '' },
-  { name: 'Nidhi', role: 'Social Media Executive', description: 'Social media execution, publishing and content coordination.', photo: '' },
-  { name: 'Vishal', role: 'Shoot Management', description: 'Video production planning and shoot coordination.', photo: '' },
-  { name: 'Tanmoy', role: 'Website Developer', description: 'Website development, technical implementation and maintenance.', photo: '' }
+  { name: 'Vishal', role: 'Marketing', photo: '' },
+  { name: 'Kuldeep', role: 'SEO Lead', photo: 'assets/kuldeep.jpg' },
+  { name: 'Kishor Bhai', role: 'Performance Marketer', photo: 'assets/kishor.jpeg' },
+  { name: 'Deepanshi', role: 'SEO Executive', photo: '' },
+  { name: 'Hema', role: 'Social Media', photo: 'assets/hema.jpg' },
+  { name: 'Komal', role: 'Video Editor', photo: '' },
+  { name: 'Nidhi', role: 'Social Media Executive', photo: '' },
+  { name: 'Naresh', role: 'Video Grapher', photo: 'assets/naresh.jpg' }
 ];
 
 const GALLERY = [
@@ -76,15 +76,21 @@ function addPhoto(parent, src, alt, className = '') {
 }
 
 const teamGrid = document.querySelector('#team-grid');
+const teamPhotos = element('div', 'team-photo-row');
+const teamRoster = element('div', 'team-name-row');
+teamGrid.append(teamPhotos, teamRoster);
 TEAM.forEach(member => {
-  const card = element('article', 'team-card');
-  const portrait = element('div', 'team-portrait');
-  const initials = element('span', 'team-initials', member.name.charAt(0));
-  initials.setAttribute('aria-hidden', 'true');
-  portrait.append(initials);
-  if (member.photo) addPhoto(portrait, member.photo, member.name);
-  card.append(portrait, element('h3', '', member.name), element('span', 'team-role', member.role), element('p', '', member.description));
-  teamGrid.append(card);
+  const card = element('article', `team-card ${member.photo ? 'team-card-photo' : 'team-card-name'}`);
+  if (member.photo) {
+    const portrait = element('div', 'team-portrait');
+    const initials = element('span', 'team-initials', member.name.charAt(0));
+    initials.setAttribute('aria-hidden', 'true');
+    portrait.append(initials);
+    addPhoto(portrait, member.photo, member.name);
+    card.append(portrait);
+  }
+  card.append(element('h3', '', member.name), element('span', 'team-role', member.role));
+  (member.photo ? teamPhotos : teamRoster).append(card);
 });
 
 if (SITE.founderPhoto) addPhoto(document.querySelector('#founder-portrait'), SITE.founderPhoto, 'Dr. Kunika Jonwal, founder of KJ MediBoost', 'founder-photo');

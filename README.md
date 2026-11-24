@@ -2,7 +2,7 @@
 
 A responsive healthcare marketing landing page based on **KJ MediBoost.pdf**. Plain HTML, CSS and JavaScript. No framework, package installation or build required.
 
-The public copy has been restored to the PDF's wording. See [CONTENT-CHECK.md](CONTENT-CHECK.md) for the section-by-section audit, verification results and pending assets. The visual design uses a cream and forest green palette, generous reading space, refined cards and 16px body text.
+The public copy follows the PDF, with the founder photo, branding and team roster updated to the owner's later instructions. See [CONTENT-CHECK.md](CONTENT-CHECK.md) for the section-by-section audit, verification results and pending assets. The visual design follows the supplied purple and teal logo, with soft lavender surfaces, refined cards and 16px body text.
 
 ## Files
 
@@ -34,11 +34,18 @@ Edit the `SITE` settings at the top of `script.js`:
 - `phone`: your display phone number, including country code.
 - `whatsapp`: international digits only, without `+` or spaces.
 - `socials`: full links to your Instagram, Facebook, LinkedIn and YouTube profiles.
-- `founderPhoto`: a path such as `assets/kunika.jpg`.
+- `founderPhoto`: currently `assets/founder.png`, using the owner's supplied portrait.
 - `reviews`: exact approved review text, original review URL and an optional approved `photo` path for each doctor.
 - `videos`: local video paths with captions and optional poster images.
 
-Set each person's `photo` in `TEAM` and each gallery item's `photo` in `GALLERY`. Add the files to `assets/`. The design uses initials and abstract artwork until genuine photos are available; no stock person is presented as a real team member. Client reviews and videos stay marked as coming soon until supplied. The PDF and generated deployment ZIP are intentionally excluded from Git; the repository contains deployable source and documentation.
+Set each person's `photo` in `TEAM` and each gallery item's `photo` in `GALLERY`. Team members with photographs appear in the portrait grid; those without photographs appear as name-and-title cards, as requested. Client reviews and videos stay marked as coming soon until supplied. The PDF and generated deployment ZIP are intentionally excluded from Git; the repository contains deployable source and documentation.
+
+## Branding and photographs
+
+- `assets/logo-source.png` is the owner's supplied logo. Header and footer use a CSS crop to remove the large outer whitespace while preserving the original image. Adjust `.brand-logo` in `style.css` if replacing it with an image of different proportions.
+- `assets/founder.png` is the owner's supplied founder portrait. Its visible crop uses CSS `object-fit` and `object-position`; the source image is unchanged.
+- Kuldeep, Kishor, Hema and Naresh's photos were downloaded from the owner's specified [Digital Big Bull team page](https://digitalbigbull.in/about.php) and are served locally. Their original image URLs are [Kuldeep](https://digitalbigbull.in/assets/images/team/Kuldeep.jpg), [Kishor](https://digitalbigbull.in/assets/images/team/Kishor%20Vekariya.jpeg), [Hema](https://digitalbigbull.in/assets/images/team/Hema.jpg) and [Naresh](https://digitalbigbull.in/assets/images/team/Naresh.jpg).
+- The current roster and titles follow the owner's instructions: Vishal — Marketing; Kuldeep — SEO Lead; Kishor Bhai — Performance Marketer; Deepanshi — SEO Executive; Hema — Social Media; Komal — Video Editor; Nidhi — Social Media Executive; Naresh — Video Grapher. Vishal retains his previous Marketing title. The four members without matching source photos intentionally have name-and-title cards only.
 
 ## Consultation form
 
@@ -71,4 +78,4 @@ Do not upload the source PDF, this README, or development utilities. There are n
 
 ## Content covered
 
-Hero, five trust highlights, all 12 healthcare audiences, all 14 services, SEO/AEO/GEO, reasons to choose KJ MediBoost, founder and vision, all eight team roles, branding and lead generation, seven working steps, three named clients, authorised review/video slots, all six culture gallery categories, ten FAQs, consultation CTA and footer with Gujarat service areas.
+Hero, five trust highlights, all 12 healthcare audiences, all 14 services, SEO/AEO/GEO, reasons to choose KJ MediBoost, founder and vision, the owner's current eight-member team, branding and lead generation, seven working steps, three named clients, authorised review/video slots, all six culture gallery categories, ten FAQs, consultation CTA and footer with Gujarat service areas.
