@@ -12,7 +12,7 @@ The original landing page shortened several headings, paragraphs and lists. The 
 | 4. SEO + AEO + GEO | `#visibility` | Exact heading, introduction, three definitions, objective and visibility qualification |
 | 5. Why KJ MediBoost? | `#about` | Exact heading, introduction and all seven reasons with their descriptions |
 | 6. Meet the Founder | `#founder` | Full biography, seven experience points, founder's vision and CTA |
-| 7. Meet Our Team | `#team` | PDF heading and introduction retained; eight names and titles updated to the owner's later roster, with four source photos and four name-and-title cards |
+| 7. Meet Our Team | `#team` | PDF heading and introduction retained; eight names and titles updated to the owner's later roster, with all eight team portraits |
 | 8. Our Specialisation | `#specialisation` | Both pillars, exact descriptions, seven branding points, eight lead generation points and CTA |
 | 9. Our Working Process | `#approach` | Exact heading and all seven steps with full descriptions |
 | 10. Our Clients & Testimonials | `#testimonials` | Exact heading, introduction and three client names and organisations |
@@ -32,7 +32,7 @@ The original landing page shortened several headings, paragraphs and lists. The 
 
 ## Material still to be supplied
 
-Contact details, social profile URLs, client photographs, office photographs, verified review text and approved testimonial videos are still to be supplied. The owner has now supplied the logo and founder portrait, and requested four matching team photos from the Digital Big Bull page. The other four members intentionally have name-and-title cards. No reviews, statistics or endorsements have been invented; photographs come from the supplied files or the specified source page.
+Contact details, social profile URLs, client photographs, office photographs, verified review text and approved testimonial videos are still to be supplied. The owner has supplied the logo, founder portrait and four team photos, and requested four matching team photos from the Digital Big Bull page. All eight team members now have portraits. No reviews, statistics or endorsements have been invented; photographs come from the supplied files or the specified source page.
 
 Editorial instructions such as “Insert verified Google Business Profile review” are implemented as clearly labelled pending content. They are not presented as real reviews. Photo slots and review/video settings are ready in `script.js`. The form does not report delivery until a real destination is configured. The original PDF and the generated deployment ZIP remain local and are excluded from Git.
 
@@ -42,4 +42,4 @@ The footer now groups brand information, quick links and address into balanced c
 
 ## Owner's branding and team update
 
-The supplied purple and teal logo now appears in the header and footer. Its outer whitespace is cropped through CSS. The supplied founder portrait and four matching team photos are stored locally in `assets/`. Team titles follow the owner's latest wording, including SEO Lead for Kuldeep and Video Grapher for Naresh, rather than the source website's titles. Vishal, Deepanshi, Komal and Nidhi have name-and-title cards only, as confirmed by the owner. The eight current names and roles, two logo instances, founder image and all four team images are checked in the browser alongside the unchanged PDF copy checks.
+The supplied purple and teal logo now appears in the header and footer. Its outer whitespace is cropped through CSS. The founder portrait and all eight team photos are stored locally in `assets/`. Team titles follow the owner's latest wording, including SEO Lead for Kuldeep and Video Grapher for Naresh, rather than the source website's titles. On 25 November 2026 the owner supplied Vishal, Deepanshi, Nidhi and Komal's remaining photos. These replace the name-and-title cards and complete the portrait grid in roster order. The eight current names and roles, two logo instances, founder image and all eight team images are checked in the browser alongside the unchanged PDF copy checks.

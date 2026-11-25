@@ -45,7 +45,8 @@ Set each person's `photo` in `TEAM` and each gallery item's `photo` in `GALLERY`
 - `assets/logo-source.png` is the owner's supplied logo. Header and footer use a CSS crop to remove the large outer whitespace while preserving the original image. Adjust `.brand-logo` in `style.css` if replacing it with an image of different proportions.
 - `assets/founder.png` is the owner's supplied founder portrait. Its visible crop uses CSS `object-fit` and `object-position`; the source image is unchanged.
 - Kuldeep, Kishor, Hema and Naresh's photos were downloaded from the owner's specified [Digital Big Bull team page](https://digitalbigbull.in/about.php) and are served locally. Their original image URLs are [Kuldeep](https://digitalbigbull.in/assets/images/team/Kuldeep.jpg), [Kishor](https://digitalbigbull.in/assets/images/team/Kishor%20Vekariya.jpeg), [Hema](https://digitalbigbull.in/assets/images/team/Hema.jpg) and [Naresh](https://digitalbigbull.in/assets/images/team/Naresh.jpg).
-- The current roster and titles follow the owner's instructions: Vishal — Marketing; Kuldeep — SEO Lead; Kishor Bhai — Performance Marketer; Deepanshi — SEO Executive; Hema — Social Media; Komal — Video Editor; Nidhi — Social Media Executive; Naresh — Video Grapher. Vishal retains his previous Marketing title. The four members without matching source photos intentionally have name-and-title cards only.
+- Vishal, Deepanshi, Nidhi and Komal's remaining photos were supplied by the owner on 25 November 2026 and are stored as `assets/vishal.jpeg`, `assets/deepanshi.jpeg`, `assets/nidhi.jpeg` and `assets/komal.jpeg`. All eight members now appear in one portrait grid.
+- The current roster and titles are: Vishal — Marketing; Kuldeep — SEO Lead; Kishor — Performance Marketer; Deepanshi — SEO Executive; Hema — Social Media; Komal — Video Editor; Nidhi — Social Media Executive; Naresh — Video Grapher. Vishal retains his previous Marketing title.
 
 ## Consultation form
 

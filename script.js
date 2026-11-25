@@ -19,13 +19,13 @@ const SITE = {
 };
 
 const TEAM = [
-  { name: 'Vishal', role: 'Marketing', photo: '' },
+  { name: 'Vishal', role: 'Marketing', photo: 'assets/vishal.jpeg' },
   { name: 'Kuldeep', role: 'SEO Lead', photo: 'assets/kuldeep.jpg' },
   { name: 'Kishor', role: 'Performance Marketer', photo: 'assets/kishor.jpeg' },
-  { name: 'Deepanshi', role: 'SEO Executive', photo: '' },
+  { name: 'Deepanshi', role: 'SEO Executive', photo: 'assets/deepanshi.jpeg' },
   { name: 'Hema', role: 'Social Media', photo: 'assets/hema.jpg' },
-  { name: 'Komal', role: 'Video Editor', photo: '' },
-  { name: 'Nidhi', role: 'Social Media Executive', photo: '' },
+  { name: 'Komal', role: 'Video Editor', photo: 'assets/komal.jpeg' },
+  { name: 'Nidhi', role: 'Social Media Executive', photo: 'assets/nidhi.jpeg' },
   { name: 'Naresh', role: 'Video Grapher', photo: 'assets/naresh.jpg' }
 ];
 
@@ -92,6 +92,7 @@ TEAM.forEach(member => {
   card.append(element('h3', '', member.name), element('span', 'team-role', member.role));
   (member.photo ? teamPhotos : teamRoster).append(card);
 });
+if (!teamRoster.childElementCount) teamRoster.remove();
 
 if (SITE.founderPhoto) addPhoto(document.querySelector('#founder-portrait'), SITE.founderPhoto, 'Dr. Kunika Jonwal, founder of KJ MediBoost', 'founder-photo');
 
