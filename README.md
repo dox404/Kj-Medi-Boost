@@ -24,7 +24,7 @@ Open `index.html` in your browser, or run:
 python -m http.server 5500
 ```
 
-Then visit http://localhost:5500. The page uses Google Fonts, with local system font fallbacks if offline. All illustrations and other visual elements are local HTML, CSS and SVG.
+Then visit http://localhost:5500. The page uses Google Fonts, with local system font fallbacks if offline. Generated artwork, photographs, video and captions are local files in `assets/`; interface decorations use HTML, CSS and SVG.
 
 ## Add your details
 
@@ -80,3 +80,11 @@ Do not upload the source PDF, this README, or development utilities. There are n
 ## Content covered
 
 Hero, five trust highlights, all 12 healthcare audiences, all 14 services, SEO/AEO/GEO, reasons to choose KJ MediBoost, founder and vision, the owner's current eight-member team, branding and lead generation, seven working steps, three named clients, authorised review/video slots, all six culture gallery categories, ten FAQs, consultation CTA and footer with Gujarat service areas.
+
+## Generated artwork, video and section order
+
+The founder is now the second main section, immediately after the hero, trust strip and agency introduction. The visible section numbers follow the new order. Existing anchor links still use the same IDs.
+
+The hero uses `assets/hero-growth.png`. The “We Understand Healthcare Beyond Marketing” panel uses `assets/healthcare-understanding.png`. Both were generated to match the supplied purple and teal branding. Section 12 contains `assets/brand-introduction.mp4`, an 18-second animated brand introduction with a poster and English caption file. The film is silent and clearly identified as an introduction; it is not a client testimonial. Real doctor testimonial footage remains pending. The normal `SITE.videos` settings can replace the introduction with approved videos later.
+
+See [MEDIA.md](MEDIA.md) for final asset links, exact generation prompts and the film sequence. No build step or video-rendering dependency is needed to deploy; all completed media files are in `assets/`.

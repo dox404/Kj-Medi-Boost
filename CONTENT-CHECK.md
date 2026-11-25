@@ -11,13 +11,13 @@ The original landing page shortened several headings, paragraphs and lists. The 
 | 3. Our Services | `#services` | All 14 exact service names and descriptions; complete six-point AEO and GEO lists |
 | 4. SEO + AEO + GEO | `#visibility` | Exact heading, introduction, three definitions, objective and visibility qualification |
 | 5. Why KJ MediBoost? | `#about` | Exact heading, introduction and all seven reasons with their descriptions |
-| 6. Meet the Founder | `#founder` | Full biography, seven experience points, founder's vision and CTA |
+| 6. Meet the Founder | `#founder` (now displayed second) | Full biography, seven experience points, founder's vision and CTA |
 | 7. Meet Our Team | `#team` | PDF heading and introduction retained; eight names and titles updated to the owner's later roster, with all eight team portraits |
 | 8. Our Specialisation | `#specialisation` | Both pillars, exact descriptions, seven branding points, eight lead generation points and CTA |
 | 9. Our Working Process | `#approach` | Exact heading and all seven steps with full descriptions |
 | 10. Our Clients & Testimonials | `#testimonials` | Exact heading, introduction and three client names and organisations |
 | 11. Our Office & Work Culture | `#culture` | Exact heading, introduction, all six gallery names and descriptions, and section caption |
-| 12. Doctor Video Testimonials | `#doctor-videos` | Dedicated section, exact heading, six topics and five suggested questions |
+| 12. Doctor Video Testimonials | `#doctor-videos` | Exact heading, six topics and five suggested questions retained; a clearly labelled animated brand introduction is available while approved doctor footage is pending |
 | 13. Frequently Asked Questions | `#faqs` | All ten questions and answers restored in full |
 | 14. Final CTA | `#contact` | Exact heading, both paragraphs, business identity, founder, location and all three CTA labels |
 | 15. Footer | Footer | Exact description, six quick links, all 14 service links, address, all service areas and four social platform names |
@@ -26,7 +26,7 @@ The original landing page shortened several headings, paragraphs and lists. The 
 
 - 229 rendered copy checks against strings extracted from the PDF: all matched.
 - Counts verified: 14 services, 12 audiences, seven reasons, seven founder experience points, eight team members, seven process steps, three clients, six gallery categories and ten FAQs.
-- Fourteen main content sections plus the footer cover the PDF's 15 sections, in order.
+- Fourteen main content sections plus the footer cover the PDF's 15 sections. At the owner's request, the founder now appears second; section labels are renumbered to match.
 - Browser checks at 320, 390, 720, 768, 800, 900, 1024, 1280 and 1440 pixels: no horizontal page overflow; body copy and form inputs remain 16px.
 - Mobile navigation, service disclosure, FAQ accordion, gallery filters, form validation and unavailable-contact feedback checked. No JavaScript runtime errors or broken internal links found.
 
@@ -43,3 +43,7 @@ The footer now groups brand information, quick links and address into balanced c
 ## Owner's branding and team update
 
 The supplied purple and teal logo now appears in the header and footer. Its outer whitespace is cropped through CSS. The founder portrait and all eight team photos are stored locally in `assets/`. Team titles follow the owner's latest wording, including SEO Lead for Kuldeep and Video Grapher for Naresh, rather than the source website's titles. On 25 November 2026 the owner supplied Vishal, Deepanshi, Nidhi and Komal's remaining photos. These replace the name-and-title cards and complete the portrait grid in roster order. The eight current names and roles, two logo instances, founder image and all eight team images are checked in the browser alongside the unchanged PDF copy checks.
+
+## Generated media and founder placement
+
+At the owner's request, two new purple-and-teal editorial images replace the old hero drawing and complement the healthcare understanding panel. These are illustrations rather than photographs of actual people or clients. The founder section has moved from sixth to second, with all biography text and links retained. Section 12 now includes an original 18-second branded motion film, clearly labelled inside the film and alongside the player as a brand introduction rather than a client testimonial. Its full duration, 1280×720 resolution, playback and seeking were verified in Chrome over local HTTP; the whole file also passed FFmpeg decoding. All 229 PDF copy checks still pass.
